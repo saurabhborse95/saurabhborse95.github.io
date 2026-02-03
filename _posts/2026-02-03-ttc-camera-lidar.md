@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "BLOG #1: TTC Computation Using Camera and LiDAR in ADAS"
+title: "TTC Computation Using Camera and LiDAR in ADAS"
 date: 2026-02-03
-categories: [ADAS, Sensor Fusion, Radar, Computer Vision]
+categories: [ADAS, Sensor Fusion]
+emoji: 📡
+read_time: 6 min read
 ---
 
 ## Time-to-Collision (TTC) Using Camera and LiDAR
