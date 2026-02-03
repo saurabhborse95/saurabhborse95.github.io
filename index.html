@@ -862,9 +862,32 @@
     <!-- Blog Section -->
     <section id="blog">
         <h2 class="section-title">Insights & Thoughts</h2>
-        <div class="empty-state">
-            <p>Coming soon — musings on automotive tech, AI, and the future of mobility</p>
+        <div class="blog-grid">
+          {% for post in site.posts limit:10 %}
+          <div class="blog-card" onclick="window.location.href='{{ post.url }}'">
+              
+              <div class="blog-image">
+                {{ post.emoji | default: "📘" }}
+              </div>
+        
+              <div class="blog-content">
+                  <h3>{{ post.title }}</h3>
+                  <p class="blog-meta">
+                    {{ post.date | date: "%d %b %Y" }} • {{ post.read_time | default: "5 min read" }}
+                  </p>
+                  <p class="blog-excerpt">
+                    {{ post.excerpt | strip_html | truncate: 140 }}
+                  </p>
+                  <a href="{{ post.url }}" class="read-more">Read More →</a>
+              </div>
+          </div>
+          {% endfor %}
         </div>
+        
+        <div style="text-align:center; margin-top:3rem;">
+          <a href="/blogs/" class="btn btn-secondary">See all blogs →</a>
+        </div>
+
         <!-- Example blog structure for future use:
         <div class="blog-grid">
             <div class="blog-card">
