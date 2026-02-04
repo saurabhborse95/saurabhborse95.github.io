@@ -1,2 +1,6 @@
 title: Saurabh Borse
-theme: minima
+description: ADAS & Automotive Engineering Blogs
+theme: null
+
+markdown: kramdown
+permalink: /blog/:title/
