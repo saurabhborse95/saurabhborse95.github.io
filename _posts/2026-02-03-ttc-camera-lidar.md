@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "TTC Computation Using Camera and LiDAR in ADAS"
-cover: assets/images/ttc.png
+cover: /assets/images/ttc.png
 date: 2026-02-03
 categories: [ADAS, Sensor Fusion]
 read_time: 6 min read
