@@ -1,34 +1,7 @@
 ---
-layout: null
+layout: default
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }} | Saurabh Borse</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
 
-{% include nav.html %}
-
-<main style="max-width:800px; margin:7rem auto 4rem; padding:2rem;">
-  <h1>{{ page.title }}</h1>
-  <p class="blog-meta">
-    {{ page.date | date: "%d %b %Y" }} • {{ page.read_time | default: "5 min read" }}
-  </p>
-
-  <article class="blog-content">
-    {{ content }}
-  </article>
-  <article class="post-content">
+<article class="post-content">
     {{ content }}
 </article>
-
-</main>
-
-{% include footer.html %}
-
-</body>
-</html>
