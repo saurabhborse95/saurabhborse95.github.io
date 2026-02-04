@@ -3,5 +3,9 @@ layout: default
 ---
 
 <article class="post-content">
+    {% if page.cover %}
+      <img class="post-cover" src="{{ page.cover }}" alt="Cover image">
+    {% endif %}
+
     {{ content }}
 </article>
