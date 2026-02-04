@@ -758,5 +758,41 @@
             line-height: 1.75;
             color: #e6e6e6;
         }
+        .post-content h2 {
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        .post-content h3 {
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        .post-content p {
+            margin-bottom: 1.4rem;
+        }
+        
+        .post-content ul,
+        .post-content ol {
+            margin-bottom: 1.6rem;
+            padding-left: 1.5rem;
+        }
+        
+        .post-content li {
+            margin-bottom: 0.6rem;
+        }
+
+        .post-content code {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.95em;
+        }
+        
+        .post-content pre {
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+
 
     </style>
