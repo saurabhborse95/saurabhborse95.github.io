@@ -16,18 +16,8 @@ layout: null
 </head>
 <body>
     <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <a href="#home" class="logo">SB</a>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#blog">Insights</a></li>
-                <li><a href="/blogs/">Blogs</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    {% include nav.html %}
+
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -178,9 +168,8 @@ layout: null
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Saurabh Borse. All rights reserved.</p>
-    </footer>
+    {% include footer.html %}
+
 
     <script>
         // Smooth scrolling for navigation links
