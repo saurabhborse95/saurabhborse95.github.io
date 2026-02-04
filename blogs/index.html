@@ -1,37 +1,16 @@
 ---
-layout: null
+layout: default
+title: Blogs
 ---
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Blogs | Saurabh Borse</title>
-  <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
 
-{% include nav.html %}
-
-<section style="margin-top:6rem;">
-  <h2 class="section-title">Blogs</h2>
-
-  <div class="blog-grid">
-    {% for post in site.posts %}
-    <div class="blog-card" onclick="window.location.href='{{ post.url }}'">
-      <div class="blog-image">{{ post.emoji | default: "📘" }}</div>
+<section class="blog-grid">
+  {% for post in site.posts %}
+    <div class="blog-card">
       <div class="blog-content">
         <h3>{{ post.title }}</h3>
-        <p class="blog-meta">{{ post.date | date: "%d %b %Y" }}</p>
-        <p class="blog-excerpt">
-          {{ post.excerpt | strip_html | truncate: 140 }}
-        </p>
+        <p class="blog-excerpt">{{ post.excerpt }}</p>
+        <a href="{{ post.url }}" class="read-more">Read →</a>
       </div>
     </div>
-    {% endfor %}
-  </div>
+  {% endfor %}
 </section>
-
-{% include footer.html %}
-
-</body>
-</html>
