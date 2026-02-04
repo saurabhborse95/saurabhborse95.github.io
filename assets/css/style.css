@@ -756,7 +756,7 @@
             font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
             font-size: 18px;
             line-height: 1.75;
-            color: #e6e6e6;
+            color: var(--text);
         }
         .post-content h2 {
             margin-top: 3rem;
@@ -782,16 +782,37 @@
             margin-bottom: 0.6rem;
         }
 
-        .post-content code {
-    font-family: "JetBrains Mono", monospace;
-    font-size: 0.95em;
-        }
+        .post-content {
+            font-family: inherit;
+            font-size: 18px;
+            line-height: 1.75;
+        }        
+
         
         .post-content pre {
             padding: 1rem;
             border-radius: 8px;
             overflow-x: auto;
         }
+
+        .post-content hr {
+            margin: 3rem 0;
+            border: none;
+            border-top: 1px solid rgba(61, 90, 128, 0.15);
+        }
+
+        .post-content blockquote {
+            margin: 2rem 0;
+            padding-left: 1.5rem;
+            border-left: 4px solid var(--accent);
+            color: var(--text-light);
+            font-style: italic;
+        }
+        
+        .post-content strong {
+            font-weight: 600;
+        }
+
 
 
 
